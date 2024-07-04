@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #f6f6f6;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+        
+        /* Header Styles */
+        .header {
+            background-color: #333333;
+            height: 60px;
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .header img {
+            width: 170px;
+            max-width: 100%;
+        }
+        
+        /* Nav Styles */
+        nav {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            background-color: #ffffff;
+            padding: 10px 0;
+        }
+        
+        nav a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #000000;
+            transition-duration: 0.15s;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        nav a:hover {
+            color: red;
+        }
+        
+        /* Banner Styles */
+        .banner img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Discount Pill */
+        .discount {
+            background-color: #e4e8ea;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px 0;
+            margin: 20px 0;
+            box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .discount > *{
+            margin-bottom: 10px;
+        }
+        
+        .discount h2,
+        .discount hr {
+            font-weight: normal;
+            color: #333333;
+        }
+        
+        .discount p {
+            color: #5f5f5f;
+            font-size: 13px;
+        }
+        
+        .discount p span {
+            background-color: #333333;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 15px;
+        }
+        
+        /* Product Card Styles */
+        .cards {
+            display: table;
+            table-layout: fixed;
+            padding: 0 10px;
+            border-spacing: 12px;
+        }
+        
+        .card1 {
+            display: table-cell;
+            width: 33.33%;
+            /* vertical-align: top; */
+            background-color: #e6dada;
+            padding: 10px 10px;
+            
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        
+        .card1 img {
+            width: 100%;
+            height: auto;
+            max-height: 150px;
+            object-fit: contain;
+        }
+        
+        .card1 .info>* {
+            /* margin-bottom: 20px; */
+        }
+        
+        .card1 span {
+            font-size: 34px;
+        }
+        
+        .card1 h3 {
+            font-weight: normal;
+            font-family: georgia, 'times new roman', serif;
+            font-size: 24px;
+        }
+        
+        .card1 a {
+            border: 1px solid grey;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #fff;
+            transition-duration: 0.15s;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .card1 a:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        
+        .horizontalrule {
+            border: 2px solid #ffffff;
+            margin: 20px;
+        }
+         
+        .social-icons {
+            margin: 0 auto; 
+            width: 100%;
+            max-width: 200px; 
+           
+            text-align: center; 
+        }
+        
+        .social-icons table {
+            width: 100%;
+        }
+        
+        .social-icons table td {
+            text-align: center;
+            padding: 5px;
+        }
+        
+        .social-icons img {
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+        }
+        
+        footer {
+            background-color: #E4E8EA;
+            padding: 10px;
+            font-size: 11px;
+            /* text-align: left; */
+        }
+        footer p {
+            color: #666666;
+        }
+        footer a {
+            color: #333333;
+            font-size: 12px;
+        }
+        /* Small Devices (600px and below) */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding-bottom: 0;
+            }
+            
+            .header,
+            .banner img {
+                width: 100%;
+            }
+            
+            .discount,
+            .card1 {
+                width: 100%;
+                display: block;
+                margin: 10px auto;
+            }
+            
+            .cards {
+                display: block;
+                padding: 0 5px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <table class="container">
+        <tr>
+            <td>
+                <!-- Header Section -->
+                <div class="header">
+                    <img src="https://i.postimg.cc/tgVFDPt8/fashion.png" alt="Fashion logo">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Nav Bar -->
+                <nav>
+                    <a href="#">New</a>
+                    <a href="#">Women</a>
+                    <a href="#">Men</a>
+                    <a href="#">Sale</a>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Banner -->
+                <div class="banner">
+                    <img src="https://i.postimg.cc/HL2Q6kBS/banner3.png" alt="">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Discount Pill -->
+                <div class="discount">
+                    <h2>Choose your Discount</h2>
+                    <hr style="height:2px;border:none;color:#333;background-color:#333;">
+                    <p>Use code: <span>SUMMER20</span></p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Cards Section -->
+                <div class="cards">
+                    <div class="card1">
+                        <img src="https://i.postimg.cc/ryY96zc3/p1.png" alt="product1">
+                        <div class="info">
+                            <span>30%</span>
+                            <h3>for T-Shirts</h3>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="card1" style="background-color: #d8bfb0;">
+                        <img src="https://i.postimg.cc/gkXHGd2J/p2.png" alt="product2">
+                        <div class="info">
+                            <span>40%</span>
+                            <h3>for Shorts</h3>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="card1" style="background-color:#e7e8e0;">
+                        <img src="https://i.postimg.cc/8CDRd6BJ/p3.png" alt="product3">
+                        <div class="info">
+                            <span>50%</span>
+                            <h3>for Suits</h3>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+
+        
+         <!-- Horizontal Rule -->
+         <tr >
+            <td  class="horizontalrule"></td>
+        </tr>
+
+        <!-- Social Media Icons -->
+        <tr>
+            <td>
+                <!-- Social Media Icons -->
+                <table class="social-icons" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                        <td><hr width="100px" color="#cccccc"></td>
+                        <td>
+                            <table class="mid" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td><img src="https://i.postimg.cc/ZR8pzSQc/twitter.png" title="twitter" alt=""></td>
+                                    <td><img src="https://i.postimg.cc/Qx0gMjdY/facebook.png" title="facebook" alt=""></td>
+                                    <td><img src="https://i.postimg.cc/gjGRY7FP/youtube.png" title='youtube' alt=""></td>
+                                    <td><img src="https://i.postimg.cc/GmtF86BL/linkedin.png" title="linked in" alt=""></td>
+                                    <td><img src="https://i.postimg.cc/pLSDDk8D/printrest.png" title="printrest" alt=""></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td><hr width="100px" color="#cccccc"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Horizontal Rule -->
+        <tr>
+            <td class="horizontalrule"></td>
+        </tr>
+
+        <tr><td>&nbsp;</td></tr>
+
+        <!-- Footer Section -->
+        <tr>
+            <td>
+                <footer>
+                    <a href="#">Privacy Policy.</a>
+                    <p>Make sure our messages get to your Inbox (and not your bulk or junk folders). Please add <a href="#">your@mail.com</a> to your contacts!</p>
+                    <p>You are receiving this email because you have visited our site or asked us about regular newsletter.</p>
+                    <p>If you wish to unsubscribe from our newsletter, click <a href="#">here</a>.</p>
+                </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

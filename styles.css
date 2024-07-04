@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f6f6f6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    /* background-color: red; */
+    width: 600px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top:30px ;
+}
+
+/* ****** Header Styles ******** */
+.header{
+    background-color: #333333;
+    height: 60px;
+    width: 600px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img{
+    width: 170px;
+    max-width: 170px;
+}
+
+/* ******* nav styles *********** */
+nav{
+    height: 39px; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   padding: 10px 0;
+}
+
+nav a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    transition-duration: 0.15s;
+}
+
+nav a:hover{
+    color: red;
+}
+
+
+/* ******* banner styles *********** */
+.banner img{
+    width: 600px;
+    max-width: 600px;
+}
+
+
+
+/* discount bill */
+.discount{
+    background-color: #e4e8ea;
+    /* width: 100%; */
+    width: 600px;
+    max-width: 600px;
+    padding: 20px 0;
+    /* border-radius: 60px; */
+    margin: 20px 0;
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0,0.2);
+}
+
+.discount > *{
+    margin-bottom: 10px;
+}
+
+.discount h2, .discount hr{
+    font-weight: normal;
+    color: #333333;
+}
+
+
+
+.discount p{
+    color: #5f5f5f;
+    font-size: 13px;
+}
+
+.discount p span{
+    background-color: #333333;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 15px;
+
+}
+
+/* product card styles */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 150px;
+    height: 300px; 
+    padding: 20px 10px;
+    background-color: #e6dada;
+    box-sizing:border-box; 
+    border-radius: 5px;
+
+}
+
+.card1 img {
+    width: 100%;
+    height: auto; 
+    max-height: 150px; 
+    object-fit:contain; 
+}
+.card1 .info > * {
+    margin-bottom: 20px;
+}
+
+.card1 span {
+    font-size: 34px;
+}
+
+.card1 h3 {
+    font-weight: normal;
+    font-family: georgia, 'times new roman', serif;
+    font-size: 24px;
+}
+
+.card1 a {
+    /* text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 9px;
+    border-bottom: 2px solid black; */
+    border: 1px solid grey;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transition-duration: 0.15s;
+    
+}
+
+.card1 a:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* horizontal ruler */
+.horizontalrule{
+    border: 2px solid #ffffff;
+    margin: 20px;
+}
+
+/* ******* social icons styles ******** */
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.social-icons hr {
+    width: 100px; 
+    color: #cccccc;
+    margin: 0; 
+}
+
+.mid {
+    display: flex;
+    gap: 10px; 
+}
+
+.social-icons img {
+    width: 35px; 
+    height: 35px; 
+}
+
+
+/* ************ footer *********** */
+footer{
+    background-color: #E4E8EA;
+    padding: 10px;
+    font-size: 11px;
+}
+footer p{
+    color: #666666;
+}
+footer a{
+    color: #333333;
+    font-size: 12px;
+}
+
+/* Small devices (600px and below) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    .header, .banner img {
+        width: 100%;
+    }
+    .nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    .discount, .card1 {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+}
