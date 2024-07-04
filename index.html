@@ -27,38 +27,27 @@
         .header {
             background-color: #333333;
             height: 60px;
-            width: 100%;
-            max-width: 600px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 600px;
+            max-width: 100%;
         }
-        
         .header img {
             width: 170px;
             max-width: 100%;
         }
-        
-        /* Nav Styles */
-        nav {
-            display: table;
-            width: 100%;
-            table-layout: fixed;
-            background-color: #ffffff;
-            padding: 10px 0;
+        .nav {
+            /* height: 39px; */
+            /* padding: 10px 0; */
         }
-        
-        nav a {
+        .nav a {
             font-size: 16px;
             text-decoration: none;
             color: #000000;
+            /* margin: 0 10px; */
             transition-duration: 0.15s;
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle;
         }
         
-        nav a:hover {
+        /* extra added by me */
+        .nav a:hover{
             color: red;
         }
         
@@ -228,25 +217,35 @@
 </head>
 <body>
     <table class="container">
-        <tr>
-            <td>
-                <!-- Header Section -->
-                <div class="header">
-                    <img src="https://i.postimg.cc/tgVFDPt8/fashion.png" alt="Fashion logo">
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <!-- Nav Bar -->
-                <nav>
-                    <a href="#">New</a>
-                    <a href="#">Women</a>
-                    <a href="#">Men</a>
-                    <a href="#">Sale</a>
-                </nav>
-            </td>
-        </tr>
+     <!-- Header Section -->
+     <tr>
+        <td class="header" align="center" valign="middle">
+            <img src="https://i.postimg.cc/tgVFDPt8/fashion.png" alt="Fashion logo">
+        </td>
+    </tr>
+
+    <!-- Navigation Bar -->
+    <tr>
+        <td>
+            <table class="nav" border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td align="center" height="39px" style="padding: 10px 0; ">
+                        <a href="#">New</a>
+                    </td>
+                    <td align="center" height="39px" style="padding: 10px 0;">
+                        <a href="#">Women</a>
+                    </td>
+                    <td align="center" height="39px" style="padding: 10px 0;">
+                        <a href="#">Men</a>
+                    </td>
+                    <td align="center" height="39px" style="padding: 10px 0;">
+                        <a href="#">Sale</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
         <tr>
             <td>
                 <!-- Banner -->
